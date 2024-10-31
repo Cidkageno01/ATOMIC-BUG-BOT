@@ -1,3 +1,4 @@
+version: 1
 services:
   - type: web
     name: XBug-Bot
@@ -5,3 +6,7 @@ services:
     buildCommand: "npm install"
     startCommand: "node index.js"
     plan: free
+    autoDeploy: true
+    envVars:
+      - key: API_KEY
+        value: rnd_Y02vyyHu2Zsdhx0yTQl0xblw6i2j  # Votre clé API
